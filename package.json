@@ -1,0 +1,42 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "dev": "yarn react-scripts start",
+    "start": "concurrently \"cross-env BROWSER=none yarn react-scripts start\" \"wait-on http://localhost:3000 && electron .\""
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo",
+    "React",
+    "Sass"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "cross-env": "^5.2.0",
+    "electron": "^3.0.4",
+    "electron-is-dev": "^1.0.1",
+    "node-sass": "^4.9.4",
+    "path": "^0.12.7",
+    "react": "^16.6.0",
+    "react-devtools": "^3.4.2",
+    "react-dom": "^16.6.0",
+    "react-scripts": "^2.0.5",
+    "sass-loader": "^7.1.0"
+  },
+  "dependencies": {},
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
