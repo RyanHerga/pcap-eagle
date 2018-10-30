@@ -32,7 +32,10 @@
     "react-scripts": "^2.0.5",
     "sass-loader": "^7.1.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@material-ui/core": "^3.3.2",
+    "@material-ui/icons": "^3.0.1"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",

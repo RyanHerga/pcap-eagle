@@ -1,8 +1,8 @@
-body {
-    background: rgb(214, 214, 214);
-    color: #010101;
+@import './sass/mixins/css3-mixins.scss';
+@import './sass/variables/colors.scss';
 
-    div {
-        background: #FFF;
-    }
+body {
+    background: $color-background;
+    color: #010101;
+    margin: 0px;
 }

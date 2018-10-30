@@ -1,0 +1,18 @@
+@import '../../sass/mixins/css3-mixins.scss';
+@import '../../sass/variables/colors.scss';
+
+.nav {
+    background: $color-white;
+    width: 100%;
+    position:fixed;
+    top:0px;
+
+    padding: 25px 50px;
+    height: auto;
+
+    @include box-shadow();
+
+    .pcap-icon {
+        margin-right:5px;
+    }
+}
