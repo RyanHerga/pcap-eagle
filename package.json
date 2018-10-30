@@ -26,6 +26,8 @@
     "electron-is-dev": "^1.0.1",
     "node-sass": "^4.9.4",
     "path": "^0.12.7",
+    "pcap": "^2.1.0",
+    "pcap-parser": "^0.2.1",
     "react": "^16.6.0",
     "react-devtools": "^3.4.2",
     "react-dom": "^16.6.0",

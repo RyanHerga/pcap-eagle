@@ -6625,7 +6625,7 @@ mute-stream@0.0.7:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
   integrity sha1-MHXOk7whuPq0PhvE2n6BFe0ee6s=
 
-nan@^2.10.0, nan@^2.9.2:
+nan@^2.0.9, nan@^2.10.0, nan@^2.9.2:
   version "2.11.1"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.11.1.tgz#90e22bccb8ca57ea4cd37cc83d3819b52eea6766"
   integrity sha512-iji6k87OSXa0CcrLl9z+ZiYSuR2o+c0bGuNmXdrhTQTakxytAFsC56SArGYoiHlJlFoHSnvmhpceZJaXkVuOtA==
@@ -7354,6 +7354,19 @@ pbkdf2@^3.0.3:
     ripemd160 "^2.0.1"
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
+
+pcap-parser@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/pcap-parser/-/pcap-parser-0.2.1.tgz#0a797ae810c28ff08ce9108bc509d323bfe6aa6f"
+  integrity sha1-Cnl66BDCj/CM6RCLxQnTI7/mqm8=
+
+pcap@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/pcap/-/pcap-2.1.0.tgz#4504072591dcf06289e3b93bd5e55ffb9a22f25b"
+  integrity sha512-immYRefC8nWvfH0HbmB/O+8xcd5TsN+VzOusFY0BNpQtZXlKwZo/2AiZHAukcC41vcgVI7dUrBxQCsQc71NaOw==
+  dependencies:
+    nan "^2.0.9"
+    socketwatcher "git+https://github.com/bytzdev/node-socketwatcher.git"
 
 pend@~1.2.0:
   version "1.2.0"
@@ -9276,6 +9289,12 @@ snapdragon@^0.8.1:
     source-map "^0.5.6"
     source-map-resolve "^0.5.0"
     use "^3.1.0"
+
+"socketwatcher@git+https://github.com/bytzdev/node-socketwatcher.git":
+  version "0.3.0"
+  resolved "git+https://github.com/bytzdev/node-socketwatcher.git#d252d3f8c45f565a0a48ebd155d4f9e4666798d9"
+  dependencies:
+    nan "^2.0.9"
 
 sockjs-client@1.1.5:
   version "1.1.5"
