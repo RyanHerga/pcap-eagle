@@ -1,14 +1,15 @@
 @import '../../sass/mixins/css3-mixins.scss';
 @import '../../sass/variables/colors.scss';
+@import '../../sass/variables/positioning.scss';
 
 .nav {
     background: $color-white;
-    width: 100%;
-    position:fixed;
-    top:0px;
-
-    padding: 25px 50px;
-    height: auto;
+    width: $left-nav-width;
+    position: absolute;
+    z-index: 9;
+    left: 0px;
+    padding: $left-nav-vertical-padding $left-nav-horizontal-padding;
+    height: calc(100% - (2 * #{$left-nav-vertical-padding}));
 
     @include box-shadow();
 

@@ -1,8 +1,20 @@
 @import './sass/mixins/css3-mixins.scss';
 @import './sass/variables/colors.scss';
+@import './sass/variables/positioning.scss';
 
 body {
     background: $color-background;
     color: #010101;
     margin: 0px;
+
+    .main-content {
+        margin-left: calc(#{$left-nav-width} + (2 * #{$left-nav-horizontal-padding}));
+        height: 100vh;
+        position: fixed;
+        left: 0;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
 }

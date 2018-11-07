@@ -24,6 +24,7 @@
     "cross-env": "^5.2.0",
     "electron": "^3.0.4",
     "electron-is-dev": "^1.0.1",
+    "lodash": "^4.17.11",
     "node-sass": "^4.9.4",
     "path": "^0.12.7",
     "pcap": "^2.1.0",
@@ -31,12 +32,15 @@
     "react": "^16.6.0",
     "react-devtools": "^3.4.2",
     "react-dom": "^16.6.0",
+    "react-redux": "^5.1.0",
     "react-scripts": "^2.0.5",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "underscore": "^1.9.1"
   },
   "dependencies": {
     "@material-ui/core": "^3.3.2",
-    "@material-ui/icons": "^3.0.1"
+    "@material-ui/icons": "^3.0.1",
+    "redux": "^4.0.1"
   },
   "browserslist": [
     ">0.2%",

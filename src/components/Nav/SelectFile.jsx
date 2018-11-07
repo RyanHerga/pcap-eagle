@@ -11,6 +11,11 @@ const {decode} = require('../../utils/decode/index.js');
 var pcapp = window.require('pcap-parser');
 
 export default class SelectFile extends Component {
+    constructor(props) { 
+        super(props);
+        this.loadModels = this.props.loadModels.bind(this);
+    }
+
     showDialog = () => {
         const filter = [{name: 'pcap', 'extensions':['pcap']}];
 
@@ -27,13 +32,12 @@ export default class SelectFile extends Component {
                 packets.push(packet.data);
                 decoded.push(decode(packet.data));
             }).on('end', (data) => {
-                console.log(packets);
-                console.log(decoded);
+                //console.log(packets);
+                this.loadModels(decoded);
             }).on('globalHeader', (data) =>{
                 console.log(data);
             })
         }
-        
     };
 
     render() {

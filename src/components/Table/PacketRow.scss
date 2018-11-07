@@ -1,0 +1,16 @@
+@import '../../sass/mixins/css3-mixins.scss';
+@import '../../sass/variables/colors.scss';
+
+.row {
+    background: white;
+    padding: 15px 20px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid $color-lighter-silver;
+    cursor: pointer;
+    @include box-shadow();
+    @include standard-font();
+
+    &:hover {
+        background: $color-lighter-silver;
+    }
+}

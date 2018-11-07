@@ -1,0 +1,16 @@
+@import '../../sass/mixins/css3-mixins.scss';
+@import '../../sass/variables/colors.scss';
+@import '../../sass/variables/positioning.scss';
+
+.header-row {
+    background: $color-black;
+    position: fixed;
+    top: 0;
+    height: 20px;
+    width: calc(100vw - (#{$left-nav-width} + (2 * #{$left-nav-horizontal-padding})) - (2 * 20px));
+    color: $color-white;
+    padding: 15px 20px;
+    margin-bottom: 2px;
+    @include box-shadow();
+    @include standard-font();
+}

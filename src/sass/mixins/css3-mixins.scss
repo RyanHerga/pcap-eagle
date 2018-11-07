@@ -38,6 +38,10 @@
 /// @param {Color} $startColor [#3C3C3C] - Start Color
 /// @param {Color} $endColor [#999999] - End Color
 
+@mixin standard-font() {
+    font-family: 'roboto';
+    font-size: 14px;
+}
 @mixin background-gradient($startColor: #3C3C3C, $endColor: #999999) {
     background-color: $startColor;
     background-image: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
