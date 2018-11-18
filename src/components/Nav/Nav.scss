@@ -3,17 +3,17 @@
 @import '../../sass/variables/positioning.scss';
 
 .nav {
-    background: $color-white;
+    background: $color-midnight-blue;
     width: $left-nav-width;
     position: absolute;
     z-index: 9;
     left: 0px;
-    padding: $left-nav-vertical-padding $left-nav-horizontal-padding;
-    height: calc(100% - (2 * #{$left-nav-vertical-padding}));
+    height: calc(100%);
 
     @include box-shadow();
 
     .pcap-icon {
         margin-right:5px;
+        color: $color-white;
     }
 }

@@ -1,0 +1,15 @@
+@import '../../sass/variables/colors.scss';
+@import '../../sass/variables/positioning.scss';
+
+.select-file-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid $color-wet-asphalt;
+
+    &:hover {
+        background: $color-wet-asphalt;
+    }
+}

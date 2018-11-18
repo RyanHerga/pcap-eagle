@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Button from '@material-ui/core/Button';
-import WifiIcon from '@material-ui/icons/Wifi';
+//import Button from '@material-ui/core/Button';
+import OpenIcon from '@material-ui/icons/FolderOpen';
 
 import './SelectFile.scss';
 
@@ -43,9 +43,9 @@ export default class SelectFile extends Component {
     render() {
         console.log("Rendered");
         return (
-            <Button variant="contained" size="small" color="primary" onClick={this.showDialog.bind(this)}>
-                <WifiIcon className="pcap-icon"/> Select PCAP
-            </Button>
+            <button className="select-file-btn" onClick={this.showDialog.bind(this)}>
+                <OpenIcon className="pcap-icon"/>
+            </button>
         );
     }
 }

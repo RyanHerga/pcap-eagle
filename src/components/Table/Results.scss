@@ -1,8 +1,11 @@
+@import '../../sass/variables/colors.scss';
+@import '../../sass/variables/positioning.scss';
+
 .results {
     margin-top:50px;
     margin-bottom: -50px;
     overflow: scroll;
     height: calc(100vh - 50px);
-    width: calc(100vw - 300px);
+    width: calc(100vw - #{$left-nav-width});
     position: fixed;
 }

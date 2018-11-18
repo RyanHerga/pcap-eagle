@@ -16,14 +16,14 @@ export default class HeaderRow extends Component {
                     <Grid item xs={2}>
                         Dest IP
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={1}>
                         Protocol
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={1}>
                         Application
                     </Grid>
-                    <Grid item xs={2}>
-                        Excrept
+                    <Grid item xs={4}>
+                        Data
                     </Grid>
                 </Grid>
             </div>

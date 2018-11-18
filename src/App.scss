@@ -8,7 +8,7 @@ body {
     margin: 0px;
 
     .main-content {
-        margin-left: calc(#{$left-nav-width} + (2 * #{$left-nav-horizontal-padding}));
+        margin-left: calc(#{$left-nav-width});
         height: 100vh;
         position: fixed;
         left: 0;
@@ -17,4 +17,8 @@ body {
     .wrapper {
         width: 100%;
     }
+}
+
+* {
+    outline:none;
 }
