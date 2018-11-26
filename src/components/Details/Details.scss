@@ -1,0 +1,21 @@
+@import '../../sass/mixins/css3-mixins.scss';
+@import '../../sass/variables/colors.scss';
+@import '../../sass/variables/positioning.scss';
+
+.details {
+    height: 100vh;
+    background: $color-light-silver;
+    width: $details-panel-width;
+    position: absolute;
+    left: 0;
+    @include box-shadow(2px,-1px,10px,#00000017);
+    @include standard-font();
+    overflow:scroll;
+
+    pre { padding: 5px; margin: 5px; }
+    .string { color: green; }
+    .number { color: darkorange; }
+    .boolean { color: blue; }
+    .null { color: magenta; }
+    .key { color: red; }
+}

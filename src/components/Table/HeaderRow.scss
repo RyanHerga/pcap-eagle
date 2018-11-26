@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     height: 20px;
-    width: calc(100vw - (#{$left-nav-width} - (2 * 20px)));
+    width: calc(100vw - (#{$left-nav-width} + (2 * 20px)) - #{$details-panel-width});
     color: $color-black;
     padding: 15px 20px;
     margin-bottom: 2px;

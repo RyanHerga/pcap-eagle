@@ -5,7 +5,8 @@
     margin-top:50px;
     margin-bottom: -50px;
     overflow: scroll;
+    left: calc(#{$left-nav-width} + #{$details-panel-width});
     height: calc(100vh - 50px);
-    width: calc(100vw - #{$left-nav-width});
+    width: calc(100vw - #{$left-nav-width} - #{$details-panel-width});
     position: fixed;
 }

@@ -1,6 +1,7 @@
 @import '../../sass/mixins/css3-mixins.scss';
 @import '../../sass/variables/colors.scss';
 
+
 .row {
     background: white;
     padding: 15px 20px;
@@ -12,5 +13,14 @@
 
     &:hover {
         background: $color-lighter-silver;
+    }
+
+    &.http-row, &.https-row {
+        background: #ffecec;
+    }
+
+
+    &.dns-row {
+        background: #ecf3ff;
     }
 }

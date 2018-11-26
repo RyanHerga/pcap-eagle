@@ -35,13 +35,13 @@ export default class SelectFile extends Component {
                 //console.log(packets);
                 this.loadModels(decoded);
             }).on('globalHeader', (data) =>{
-                console.log(data);
+                //console.log(data);
             })
         }
     };
 
     render() {
-        console.log("Rendered");
+        //console.log("Rendered");
         return (
             <button className="select-file-btn" onClick={this.showDialog.bind(this)}>
                 <OpenIcon className="pcap-icon"/>

@@ -1,4 +1,5 @@
 //Also known as MAC address
+var util = require("./util");
 function EthernetAddr(raw_packet, offset) {
 	this.addr = new Array(6);
 	this.addr[0] = raw_packet[offset];
@@ -10,7 +11,12 @@ function EthernetAddr(raw_packet, offset) {
 }
 
 EthernetAddr.prototype.toString = function toString() {
-	return "Ethernet";
+	return util.int8_to_hex[this.addr[0]] + ":" +
+		util.int8_to_hex[this.addr[1]] + ":" +
+		util.int8_to_hex[this.addr[2]] + ":" +
+		util.int8_to_hex[this.addr[3]] + ":" +
+		util.int8_to_hex[this.addr[4]] + ":" +
+		util.int8_to_hex[this.addr[5]];
 };
 
 module.exports = EthernetAddr;
