@@ -12,9 +12,9 @@ In order to run the application you will need ALL of the following:
 
 ## Cloning Git into your local Machine
 1. Browse to the directory you want to download this project in.
-2. Run `git clone https://gitlab.com/erau-hci-db-2018/bobweb.git` on the terminal or command prompt
+2. Run `git clone git@github.com:RyanHerga/pcap-eagle.git` on the terminal or command prompt
 3. Enter your username and password as prompted
-4. The source code should now be in your local machine, you should now be able to `cd bobweb`
+4. The source code should now be in your local machine, you should now be able to `cd pcap-eagle`
 
 # Installing Dependencies
 1. Verify that NodeJS is installed by running ``npm -v`` on the terminal
