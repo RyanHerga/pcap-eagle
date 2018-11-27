@@ -1,90 +1,53 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# Getting Started
+This is a Work In Progress GUI Application (Thus, Unpublished and Unstable) that allows you to read .pcap files on any platform (MacOS, Windows, and Linux).
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+This guide will walk you through downloading, setting up, and launching the website on your local machine.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+# DEVELOPMENT GUIDE
+## Prerequisites
+In order to run the application you will need ALL of the following:
 
----
+* NodeJS (Download here: https://nodejs.org/en/download/)
+* Git (Download here: https://git-scm.com/downloads) Warning: This could already be on your machine! Run `git -v` to verify.
 
-## Edit a file
+## Cloning Git into your local Machine
+1. Browse to the directory you want to download this project in.
+2. Run `git clone https://gitlab.com/erau-hci-db-2018/bobweb.git` on the terminal or command prompt
+3. Enter your username and password as prompted
+4. The source code should now be in your local machine, you should now be able to `cd bobweb`
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+# Installing Dependencies
+1. Verify that NodeJS is installed by running ``npm -v`` on the terminal
+2. `cd` to the directory for this project.
+3. Run `npm install` or if that doesn't work, run `sudo npm install`
+4. All dependencies should install successfully into the node_modules folder (This is sometimes a hidden folder)
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+## Running the application
+Once the dependencies have been installed, you can run `npm start` to launch the website.
+The website should now be live here:  [http://localhost:3000](http://localhost:3000)
 
----
+## Setting up the IDE
+We recommend using Visual Studios Code for Web Development. You can download that here: https://code.visualstudio.com/
+VS Code also offers an interactive git feature so that pulling and pushing code changes can be done directly on the software. ESLint is also supported allowing automatic indentation and code corrections upon each save. There are some additional setting up to do to make sure the application runs seamlessly with VS Code.
 
-## Create a file
+### Get Started with ESLint
+1. Open VS Code and load the project directory in your current workspace.
+2. On the left navigation, click on the "Extensions" tab - That's the fourth icon down.
+3. Search for "ESLint" and install Dirk Baeumer's version with 13M+ Downloads.
+4. Reload VS Code
+5. On Mac, Press `CMD+SHIFT+P` then look for `Preferences: Open Workspace Settings`
+6. Under Search Settings, search for 'ESlint Auto Fix on Save' and enable that option by making sure the checkbox is checked.
 
-Next, you’ll add a new file to this repository.
+When modifying any source code in the Workspace, you will now be able to see errors and warnings. If you save the file, VS Code will automatically fix these errors when applicable.
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+### Good to have VSCode Extensions
+* `Auto Close Tag` by Jun Han will help with HTML tags
+* `Useful React Snippets` by igorming is useful for quick React shortcuts to create components by simply writing `comp` and pressing space
+* `VSCode Great Icons` by Emmanuel Béziat will help you differentiate between files in the VSCode File Explorer
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+## How to use Git
+By this point, you've already ran one git command to clone the repository into your local machine. Git is a version-control system for tracking changes in computer files and coordinating work on those files among multiple people. 
 
----
+I couldn't have explained it better, myself. For information on Git check out this tutorial: [http://rogerdudler.github.io/git-guide/](http://rogerdudler.github.io/git-guide/)
 
-## Clone a repository
-
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
-
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
-# electron-quick-start
-
-**Clone and run for a quick way to see Electron in action.**
-
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
-
-**Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
-
-A basic Electron application needs just these files:
-
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
-
-You can learn more about each of these components within the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start).
-
-## To Use
-
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-git clone https://github.com/electron/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies
-npm install
-# Run the app
-npm start
-```
-
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
-
-## Resources for Learning Electron
-
-- [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
-- [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
-- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
-
-## License
-
-[CC0 1.0 (Public Domain)](LICENSE.md)
+Some additional notes: Always pull before working on your code to get the latest changes and be sure to make your commit messages meaningful so that other developers know why those changes have been made.
